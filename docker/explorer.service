@@ -1,0 +1,10 @@
+[supervisord]
+nodaemon=true
+
+[program:explorer]
+command=npm run start
+directory=/opt
+
+[program:pollyad]
+command=./run_pollyad.sh
+directory=/opt
